@@ -2,7 +2,7 @@ package sistemaCaixaAutomatico;
 
 public class CobrancaPorOperacao extends Cobranca implements CobrancaTaxaStrategy {
 	CobrancaPorOperacao(ContaCor contaCor) {
-		super(contaCor, 0.0f, 20.0f);
+		super(contaCor, 0, 20);
 	}
 
 	@Override

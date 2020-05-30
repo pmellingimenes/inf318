@@ -1,10 +1,10 @@
 package sistemaCaixaAutomatico;
 
 public class CobrancaPacoteBasico extends Cobranca implements CobrancaTaxaStrategy {
-	private static int limitOperacao = 1;
+	private static int limitOperacao = 2;
 	
 	CobrancaPacoteBasico(ContaCor contaCor) {
-		super(contaCor, 10.0f, 10.0f);
+		super(contaCor, 10, 10);
 	}
 	@Override
 	public void cobrarTaxaOperacao() throws Exception {

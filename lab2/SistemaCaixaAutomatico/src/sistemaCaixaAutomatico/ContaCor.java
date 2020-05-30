@@ -83,7 +83,7 @@ public class ContaCor implements CobrancaTaxaStrategy {
 			System.out.println("Senha incorreta");
 			return false;
 		}
-		
+		this.cobrarTaxaOperacao();
 		return this.removerSaldo(hist, val);
 	}
 	
@@ -117,7 +117,7 @@ public class ContaCor implements CobrancaTaxaStrategy {
 			estado = ContaCor.ENCERRADA;		// ... torna a conta inativa
 			System.out.println("Conta de "+this.titular+", número "+this.numConta+" foi encerrada.");
 		}
-		this.cobrarTaxaOperacao();
+		
 		return true;
 	}
 
